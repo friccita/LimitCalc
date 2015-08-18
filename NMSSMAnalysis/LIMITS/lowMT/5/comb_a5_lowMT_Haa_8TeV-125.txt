@@ -1,0 +1,31 @@
+Combination of ggH, WH, VBF, ZH signal production channels
+imax 1 number of bins
+jmax * number of processes minus 1
+kmax * number of nuisance parameters
+----------------------------------------------------------------------------------------------------
+bin          lowMT
+observation  7.0
+----------------------------------------------------------------------------------------------------
+bin                                lowMT        lowMT        lowMT       lowMT        lowMT
+process                             ZH           VBF           WH         ggH       bkg_taufake
+process                             -3           -2            -1          0             1
+rate                                0.03         0.03         0.111       0.307        6.22
+----------------------------------------------------------------------------------------------------
+CMS_eff_b                   lnN    1.056      0.967/1.040     1.056     0.967/1.040      -
+CMS_Haa_sys_b               lnN    1.018        1.033         1.018      1.033           -
+CMS_scale_met               lnN     1.0          1.0           1.0        1.0            -
+lumi_8TeV                   lnN    1.026        1.026         1.026      1.026           -
+CMS_eff_m_id                lnN    1.005        1.005         1.005      1.005           -
+CMS_eff_m_iso               lnN    1.002        1.038         1.002      1.038           -
+CMS_eff_m_HLT               lnN    1.002        1.042         1.002      1.042           -
+CMS_eff_m_id_soft           lnN    1.015        1.015         1.015      1.015           -
+CMS_eff_t_charge            lnN  0.990/1.020  0.990/1.020  0.990/1.020  0.990/1.020      -
+CMS_eff_t_id                lnN    1.06         1.06          1.06       1.06            -
+CMS_Haa_eff_e_id_filter     lnN     1.0         1.01           1.0       1.01            -
+CMS_eff_m_id_soft_HLT       lnN     1.0         1.015          1.0       1.015           -
+CMS_eff_t_id_HLT            lnN     1.0          1.1           1.0        1.1            -
+CMS_Haa_estZH_sys           lnN    1.191          -             -          -             -
+CMS_Haa_estVBF_sys          lnN      -          1.232           -          -             -
+bkg_stat_taufake            gmN 22   -            -             -          -           0.284
+CMS_Haa_bkg_sys             lnN      -            -             -          -         0.412/1.203
+CMS_Haa_bkg_BDstat          lnN      -            -             -          -           1.574

@@ -1,0 +1,31 @@
+# Simple counting experiment, with two signals and one data-driven total background estimate 
+# Trial run of the H->aa->4tau analysis for mH = 125 GeV and ma = 9 GeV
+
+imax 1  number of channels
+jmax 1  number of sources - 1
+kmax * number of nuisance parameters (sources of systematic uncertainties)
+---------------------------------------------------------------------------
+# shapes * * muHadMass_shapes.root $PROCESS $PROCESS_SYSTEMATIC
+---------------------------------------------------------------------------
+# we have just one channel, in which we observe 8 events
+bin 1
+observation 11.1
+---------------------------------------------------------------------------
+bin                             1          1
+process                        WH         bkg
+process                         0          1
+rate                           29         11.1
+---------------------------------------------------------------------------
+lumi_8TeV               lnN    1.026        -        lumi affects MC signal only
+muIso                   lnN    1.002        -        muIso eff data/MC corr
+muTrig                  lnN    1.002        -        muTrig eff data/MC corr
+muID                    lnN    1.005        -        muID eff data/MC corr
+softMuID                lnN    1.015        -        soft Mu ID eff data/MC corr
+tauID                   lnN     1.10        -        tauID eff data/MC corr
+tauCharge               lnN   .99/1.02      -        asymmetric tau charge ID error 
+CMS_eff_b               lnN    1.011        -        btag eff data/MC corr
+bkg_sys                 lnN      -         1.718     data/MC discrepancy systematic
+#xs_WH                  lnN     1.16        -        pp->WH cross section + signal efficiency + other
+bkg_stat               gmN   36  -       0.308824    statistical error on bkg
+#CMS_scale_t_mutau_8TeV lnN      1          -        tau_had energy scale uncertainty (data/MC)
+METuncert              lnN     1.013        -        MET uncertainty

@@ -1,0 +1,28 @@
+Combination of WH_Haa_8TeV-126.txt  ggH_Haa_8TeV-126.txt
+imax 1 number of bins
+jmax * number of processes minus 1
+kmax * number of nuisance parameters
+----------------------------------------------------------------------------------------------------------------------------------
+bin          ch1
+observation  11.1
+----------------------------------------------------------------------------------------------------------------------------------
+bin                                 ch1          ch1          ch1
+process                             WH           bkg          ggH
+process                             -1           1            0
+#rate                                10.9000      11.1000      18.8000
+rate                                8.49000      6.22000      12.0000
+----------------------------------------------------------------------------------------------------------------------------------
+CMS_eff_b               lnN         0.986/1.017  -            -
+METuncert               lnN         1.0093       -            -
+#bkg_stat                gmN  36     -            0.308824     -
+bkg_stat                gmN  21     -            0.296108     -
+#bkg_sys                 lnN         -            1.718        - #Region B/A agreement, old
+#bkg_sys                 lnN         -        0.448/1.519        -
+bkg_sys                 lnN         -         0.440/1.627        -
+lumi_8TeV               lnN         1.026        -            1.026
+muID                    lnN         1.005        -            1.005
+muIso                   lnN         1.002        -            1.002
+muTrig                  lnN         1.002        -            1.002
+softMuID                lnN         1.015        -            1.015
+tauCharge               lnN         0.990/1.020  -            0.990/1.020
+tauID                   lnN         1.1          -            1.1

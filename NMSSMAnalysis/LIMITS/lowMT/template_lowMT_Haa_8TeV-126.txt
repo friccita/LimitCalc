@@ -1,0 +1,30 @@
+Combination of ggH, WH, VBF, ZH signal production channels
+imax 1 number of bins
+jmax * number of processes minus 1
+kmax * number of nuisance parameters
+----------------------------------------------------------------------------------------------------------------------------------
+bin          lowMT
+observation  7.06
+----------------------------------------------------------------------------------------------------------------------------------
+bin                                lowMT        lowMT        lowMT       lowMT        lowMT           lowMT
+process                             ZH           VBF           WH         ggH       bkg_taufake    bkg_resonance
+process                             -3           -2            -1          0             1              2
+rate                                 X            X             X          X           6.04           1.03
+----------------------------------------------------------------------------------------------------------------------------------
+CMS_eff_b               lnN          X            X             X          X             -              -
+METuncert               lnN          X            X             X          X             -              -
+lumi_8TeV               lnN        1.026        1.026         1.026      1.026           -              -
+muID                    lnN        1.005        1.005         1.005      1.005           -              -
+muIso                   lnN        1.002        1.038         1.002      1.038           -              -
+muTrig                  lnN        1.002        1.042         1.002      1.042           -              -
+softMuID                lnN        1.015        1.015         1.015      1.015           -              -
+tauCharge               lnN      0.990/1.020  0.990/1.020  0.990/1.020  0.990/1.020      -              -
+tauID                   lnN        1.06         1.06          1.06       1.06            -              -
+elecID_HLT              lnN         1.0         1.01           1.0       1.01            -              -
+softMuID_HLT            lnN         1.0         1.015          1.0       1.015           -              -
+tauID_HLT               lnN         1.0          1.1           1.0        1.1            -              -
+estim_sys               lnN        1.208        1.251           -          -             -              -
+bkg_stat_taufake        gmN  21      -            -             -          -           0.287            -
+bkg_stat_dimuon         gmN  2       -            -             -          -             -            0.514
+bkg_sys                 lnN          -            -             -          -           1.151            -
+bkg_BDstat              lnN          -            -             -          -           1.794            -
